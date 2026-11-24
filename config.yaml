@@ -1,0 +1,31 @@
+io:
+  crop_dir: crop
+  csv_prefix: violations
+  full_dir: full
+  roi_config_path: roi_config.json
+  save_output_video: true      # Bật thành true nếu bạn muốn xuất video out_
+  tracks_csv_path: tracks_v8n.csv
+  video_paths:
+  - phamvandong_video_01.mp4
+
+logic:
+  allow_roi_gap_frames: 2
+  debug_rejected: false
+  lost_track_tolerance: 30
+  min_hits_ratio: 0.4
+  tracked_classes:
+  - 1
+  - 3
+  violating_class_id: 3
+  violation_time_sec: 0.5
+
+model:
+  agnostic_nms: true
+  augment: true
+  conf_thres: 0.1
+  half: true
+  imgsz: 1536
+  iou_thres: 0.3
+  name: yolov8n.pt
+  tracker: custom_bytetrack.yaml
+  vid_stride: 1

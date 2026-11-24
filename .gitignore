@@ -1,0 +1,14 @@
+# Môi trường ảo và cache Python
+venv/
+__pycache__/
+*.pyc
+
+# Video và trọng số mô hình (quá giới hạn 100MB của GitHub)
+*.mp4
+*.avi
+*.pt
+
+# Dữ liệu đầu ra lớn
+crop/
+full/
+tracks_*.csv
